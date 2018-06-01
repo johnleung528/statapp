@@ -1,0 +1,84 @@
+/* Nav */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav > li {
+  display: block;
+  margin: 0px;
+  width: 50%;
+  height: 100%;
+}
+
+li > a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.button-win {
+  background-color: #ff4c4c;  /* red */
+}
+
+.icon-win  {
+  background-image: url(./assets/win_icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.button-build {
+
+  background-color: #93e2ff;  /* blue */
+}
+
+.icon-build  {
+  background-image: url(./assets/win_icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.button-campus {
+  background-color: #ffe375;  /* yellow */
+}
+
+.icon-campus  {
+  background-image: url(./assets/win_icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.button-stat {
+  background-color: #80e591;  /* green */
+}
+
+.icon-stat  {
+  background-image: url(./assets/win_icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.button-profile {
+  background-color: #dbaaff;  /* purple */
+}
+
+.icon-profile  {
+  background-image: url(./assets/win_icon.png);
+  width: 20px;
+  height: 20px;
+}
+
+.selected {
+  color: green;
+  font-size: 1em;
+}

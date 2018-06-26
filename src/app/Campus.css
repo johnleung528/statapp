@@ -1,0 +1,25 @@
+.campus {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.campus-header {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 10;
+  background-color: #ffe375;
+  width: 100%;
+  height: 15%;
+}
+
+.campus-header > h1 {
+  margin: 0px;
+}

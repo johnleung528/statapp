@@ -1,0 +1,53 @@
+.build {
+  display: block;
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.build-header {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 15%;
+}
+
+.build-header h1 {
+  margin: 0px;
+}
+
+.build-box {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-style: none;
+  background-color: #93e2ff;
+  float: left;
+  margin: 0px;
+  padding: 1em;
+  width: 50vw;
+  height: 100%;
+  align-items: center;
+}
+
+
+
+.build-section {
+  width: 100%;
+}
+.build-section>button{
+  margin: 0 10px 0 10px;
+}
+
+.statNumber {
+  width: 40px;
+  font-size: 3em;
+}

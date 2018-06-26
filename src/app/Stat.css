@@ -1,0 +1,25 @@
+.stat {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stat-header {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 10;
+  background-color: #80e591;
+  width: 100%;
+  height: 15%;
+}
+
+.stat-header > h1 {
+  margin: 0px;
+}

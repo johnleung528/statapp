@@ -4,8 +4,8 @@ import './Profile.css';
 class Profile extends Component {
   render() {
     return (
-        <div>
-          <header>
+        <div className="profile">
+          <header className="profile-header">
             <h1>Header Profile</h1>
           </header>
           <section>

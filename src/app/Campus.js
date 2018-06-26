@@ -4,8 +4,8 @@ import './Campus.css';
 class Campus extends Component {
   render() {
     return (
-        <div>
-          <header>
+        <div className="campus">
+          <header className="campus-header">
             <h1>Header Campus</h1>
           </header>
           <section>

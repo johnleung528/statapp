@@ -1,65 +1,32 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom';
-import Loadable from 'react-loadable';
+import { Route, Switch, Redirect, NavLink } from 'react-router-dom';
+import SwipeableRoutes from "react-swipeable-routes";
+import Win from './routes/Win';
+import Build from './routes/Build';
+import Campus from './routes/Campus';
+import Stat from './routes/Stat';
+import Profile from './routes/Profile';
 import Nav from './Nav';
 import './App.css';
-
-const Loading = () => <div>Loading...</div>;
-
-const NoMatch = () => <div>404 Not Found</div>;
-
-const Home = Loadable({
-  loader: () => import('./routes/Home'),
-  loading: Loading,
-});
-
-const Win = Loadable({
-    loader: () => import('./routes/Win'),
-    loading: Loading,
-});
-
-const Build = Loadable({
-    loader: () => import('./routes/Build'),
-    loading: Loading,
-});
-
-const Campus = Loadable({
-    loader: () => import('./routes/Campus'),
-    loading: Loading,
-});
-
-const Stat = Loadable({
-    loader: () => import('./routes/Stat'),
-    loading: Loading,
-});
-
-const Profile = Loadable({
-    loader: () => import('./routes/Profile'),
-    loading: Loading,
-});
 
 class App extends Component {
   render () {
     return (
-      <Router>
-        <div className="App">
-          <div className="content-container">
-            <Switch>
-              <Route path="/win" component={Win}/>
-              <Route path="/build" component={Build}/>
-              <Route path="/campus" component={Campus}/>
-              <Route path="/stat" component={Stat}/>
-              <Route path="/profile" component={Profile}/>
-              {/* when none of the above match, <NoMatch> will be rendered */}
-              <Route component={NoMatch}/>
-            </Switch>
-          </div>
+      <div className="App">
+        <div className="content-container">
+          <SwipeableRoutes>
+            <Route exact path="/dashboard/win" component={Win}/>
+            <Route path="/dashboard/build" component={Build}/>
+            <Route path="/dashboard/campus" component={Campus}/>
+            <Route path="/dashboard/stat" component={Stat}/>
+            <Route path="/dashboard/profile" component={Profile}/>
+          </SwipeableRoutes>
 
-          <nav className="nav-container">
-            <Nav />
-          </nav>
         </div>
-      </Router>
+        <nav className="nav-container">
+          <Nav />
+        </nav>
+      </div>
     );
   }
 }
